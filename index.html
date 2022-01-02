@@ -10,11 +10,109 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1 class="my-name">Zarembo Alesya Valerievna</h1>
-            <h2 class="my-cv">Front-end develper</h2>
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                      <a href="#summary" class="nav-link">Summary</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#code" class="nav-link">Code</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#courses" class="nav-link">Courses</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#education" class="nav-link">Education</a>
+                    </li>
+                  <li class="nav-item">
+                      <a href="#english" class="nav-link">English</a>
+                    </li>
+                </ul>
+              </nav>
         </header>
         <main class="main">
-
+            <section class="section" id="profile">
+                <img class="photo-cv" src="assets/img/photo.jpg" alt="my photo">
+                <h1 class="my-name">Zarembo Alesya Valerievna</h1>
+                <h2 class="my-cv">Front-end develper</h2>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="summary">Summary</h2>
+                <p class="summary-text">
+                    I worked as a legal adviser after graduation. During my studies, I
+                    was always interested in programming. I decided to master the
+                    area of frontend development. My goal is to work
+                    web developer. I am constantly improving my skills
+                    and I am confident that I can achieve this.
+                </p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="contacts">Contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <img class="location-icon" src="assets/img/location.png" alt="location">
+                        <a href="#" class="location">Minsk, Belarus</a>
+                    </li>
+                    <li class="contacts-item">
+                        <img class="email-icon" src="assets/img/mail.png" alt="email">
+                        <a href="mailto:alesya.zaremb@mail.ru" class="mail">alesya.zaremb@mail.ru</a>
+                    </li>
+                    <li class="contacts-item">
+                        <img class="github-icon" src="assets/img/github.png" alt="github">
+                        <a href="https://github.com/AlesyaZ" class="github">AlesyaZ</a>
+                    </li>
+                    <li class="contacts-item">
+                        <img class="discord-icon" src="assets/img/discord.png" alt="discord">
+                        <a href="#" class="discord">Alesya Zarembo#1778</a>
+                    </li>
+                  </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="skills">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">
+                       <div class="Web-development">Web-development: <p>HTML5, CSS3(SASS), JavaScript</p></div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="Frameworks">Frameworks and Libraries: <p> React, Bootstrap, JSON</p> </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="version-control">Version control: <p> Git, GitHub</p> </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="tools">Tools: <p> Visual Studio Code</p> </div>
+                    </li>
+                    <li class="skills-item">
+                        <div class="graphics">Graphics: <p>Figma</p> </div>
+                    </li>
+                  </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="code">Code</h2>
+                <pre><code class="code-text">
+                    const React = require('react');
+                    const Hello = () => ( &lth1&gtHello &lt/h1&gt);
+                    const World = () => ( &lth2&gtWorld! &lt/h2&gt);
+                    
+                    class Greet extends React.Component {
+                      
+                      render() {
+                        return  &ltdiv&gt &ltHello /&gt &ltWorld /&gt &lt/div&gt ;
+                      }
+                    }
+                </code>
+            </pre>
+                
+            </section>
         </main>
         <footer class="footer">
 
