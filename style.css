@@ -1,17 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     background: linear-gradient(150deg, #95ddf8, #edf6fb , 85%, #95ddf8);
     min-height: 100vh;
+    margin: 0; 
+    padding: 0;
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
 .wrapper {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 70vw;
-    height: 100vh;
     background: #FFFFFF;
     border-radius: 20px;
     align-content: space-between;
@@ -20,14 +30,186 @@ body {
     font-family: Roboto;
 }
 
+.header {
+    background-color: #BDC8D2;
+    width: 70vw;
+    border-radius: 20px 20px 0 0;
+}
+
+.item {
+    list-style: none;
+}
+
+.item a,
+.projects-item a{
+    color: #254957;
+    padding: 0 1vw;
+    line-height: 50px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.contacts-item a:hover,
+.projects-item a:hover{
+    color: #95ddf8;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #122e38;
+    padding: 0 1vw;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: 00;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    text-align: left;
+    width: 50vw;
+}
+
+section.section-profile {
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 50vw;
+}
+
+section.section-contacts {
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 5px solid #dddd;
+    border-bottom: 5px solid #dddd;
+}
+
+section.section-skills,
+.section-code,
+.section-courses,
+.section-education {
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid #dddd;
+}
+
+section.section-language,
+.section-projects {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo-cv {
+    width: 200px;
+    height: 225px;
+    border-radius: 20%;
+}
+
+section div {
+    font-size: 18px;
+    color: #325c6b;
+}
+
+section div p{
+    font-size: 16px; 
+    color: #6b6b6b;
+    text-decoration: underline;
+}
+
 h1 {
     font-style: normal;
     font-weight: normal;
     color: #516879;
 }
 
-h2 {
+h2.my-cv {
     font-style: normal;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.39);
+}
+
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(25, 138, 163);
+}
+
+.summary-text {
+    font-size: 17px;
+    color: #145068;
+}
+
+.contacts-item img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.section-projects img {
+    width: 400px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.projects-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 400px;
+}
+
+pre {
+    background-color: rgba(250, 235, 215, 0.623);
+    border-radius: 2%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    background-color: #7d8388;
+    width: 70vw;
+    border-radius: 0 0 20px 20px;
+}
+
+.footer div {
+    display: contents;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer div a{
+    color: #ffffff;
+    padding: 0 1vw;
+    line-height: 50px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.footer div a:hover {
+    color: lightseagreen;
+}
+.rsschool-icon {
+    width: 100px;
+}
+
+div .github-icon-link {
+    display: flex;
+}
+
+.github-icon-footer{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
