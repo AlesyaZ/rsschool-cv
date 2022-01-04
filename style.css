@@ -31,9 +31,15 @@ body {
 }
 
 .header {
-    background-color: #BDC8D2;
+    background: linear-gradient(150deg, #BDC8D2, #edf6fb , 85%, #BDC8D2);
     width: 70vw;
     border-radius: 20px 20px 0 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item {
@@ -74,9 +80,13 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 30px;
     text-align: left;
     width: 50vw;
+}
+
+.section-summary {
+    border-bottom: 5px solid #dddd;
 }
 
 section.section-profile {
@@ -90,23 +100,34 @@ section.section-profile {
 section.section-contacts {
     justify-content: space-evenly;
     align-items: center;
-    border-top: 5px solid #dddd;
-    border-bottom: 5px solid #dddd;
+    width: 400px;
+    background: rgba(188, 188, 190, 0.13);
+    border-radius: 2%;
 }
 
-section.section-skills,
+section.section-skills div {
+    font-size: 18px;
+    color: #325c6b;
+    background: rgba(230, 230, 250, 0.514);
+    border-radius: 2%;
+    text-align: center;  
+}
+
+.section.section-skills,
 .section-code,
 .section-courses,
 .section-education {
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 5px solid #dddd;
+    width: 400px;
 }
 
 section.section-language,
 .section-projects {
     justify-content: space-evenly;
     align-items: center;
+    width: 400px;
 }
 
 .photo-cv {
@@ -156,20 +177,25 @@ h2 {
 }
 
 .section-projects img {
-    width: 400px;
+    width: 350px;
     height: 200px;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .projects-item {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    width: 400px;
+    background: radial-gradient(black, transparent);
+    width: 350px;
+    justify-content: center;
+}
+
+.projects-item a {
+    font-size: 25px;
 }
 
 pre {
-    background-color: rgba(250, 235, 215, 0.623);
+    width: 470px;
+    justify-content: center;
+    background-color: rgba(188, 188, 190, 0.13);
     border-radius: 2%;
 }
 
@@ -178,7 +204,7 @@ pre {
     justify-content: space-around;
     align-items: center;
     height: 110px;
-    background-color: #7d8388;
+    background: linear-gradient(150deg, #7d8388, #b8bfc4 , 85%, #7d8388);
     width: 70vw;
     border-radius: 0 0 20px 20px;
 }
